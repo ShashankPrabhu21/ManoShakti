@@ -12,6 +12,7 @@ db = firestore.client()
 @app.route('/')
 def home():
     return render_template('adhd.html')
+
 @app.route('/submit', methods=['POST'])
 def submit():
     student_id = request.form['student_id']
